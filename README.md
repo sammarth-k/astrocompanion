@@ -1,1 +1,1 @@
-# astrocompanion
+# Astro Companion
