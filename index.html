@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            .fade4{
+                animation: fadeIn ease 25s;
+                -webkit-animation: fadeIn ease 25s;
+                -moz-animation: fadeIn ease 25s;
+                -o-animation: fadeIn ease 25s;
+                -ms-animation: fadeIn ease 25s;
+            }
+             .fade3{
+                animation: fadeIn ease 15s;
+                -webkit-animation: fadeIn ease 15s;
+                -moz-animation: fadeIn ease 15s;
+                -o-animation: fadeIn ease 15s;
+                -ms-animation: fadeIn ease 15s;
+            }
+            .fade2{
+                animation: fadeIn ease 12s;
+                -webkit-animation: fadeIn ease 12s;
+                -moz-animation: fadeIn ease 12s;
+                -o-animation: fadeIn ease 12s;
+                -ms-animation: fadeIn ease 12s;
+            }
+            .fade-in {
+                animation: fadeIn ease 7s;
+                -webkit-animation: fadeIn ease 7s;
+                -moz-animation: fadeIn ease 7s;
+                -o-animation: fadeIn ease 7s;
+                -ms-animation: fadeIn ease 7s;
+                }
+            @keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+
+            @-moz-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+
+            @-webkit-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+
+            @-o-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+
+            @-ms-keyframes fadeIn {
+                0% {opacity:0;}
+                100% {opacity:1;}
+                }
+            /*scrollbar*/
+
+            /* width */
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: #555;
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: #333;
+            }
+        
+            body{
+                background-color: #333;
+                color:#DDDEE0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                }
+            #logo{
+                padding-top:30vh;
+            }
+            #detail{
+                text-align:center;
+                font-size: 2vw;
+            }
+            #tbl{
+               font-size: 1vw;
+               
+            }
+            
+            .button{
+                border-radius: 25px;
+                height: 3vw;
+                
+                border: 2px solid #DDDEE0;
+                background-color:#333;
+                color:#DDDEE0;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size:1.5vw;
+                padding-right:20px;
+                padding-left:20px;
+                transition: all 0.5s;
+                cursor: pointer;
+                
+            }
+            footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                font-size:1vw;
+                text-align: center;
+                
+            }
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+
+            .button:hover span {
+                padding-right: 25px;
+               
+                }
+            .button:hover{
+                color: #DDDEE0;
+                background-color:#333;
+                border-color: #DDDEE0;
+                
+            }
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+                }
+            th{
+                padding-left:0.5vw;
+                padding-right:0.5vw;
+            }
+            .button2{
+                border-radius: 25px;
+                height: 2vw;
+                
+                border: 2px solid #DDDEE0;
+                background-color:#333;
+                color:#DDDEE0;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size:1vw;
+                padding-right:20px;
+                padding-left:20px;
+                transition: all 0.5s;
+                cursor: pointer;
+             }
+            .button2 span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                }
+
+            .button2 span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+                }
+
+            .button2:hover span {
+                padding-right: 25px;
+               
+                }
+            .button2:hover{
+                color: #DDDEE0;
+                background-color:#333;
+                border-color: #DDDEE0;
+                
+            }
+            .button2:hover span:after {
+                opacity: 1;
+                right: 0;
+                }
+            .t{
+                padding-left:0.25vw;
+                padding-right: 0.25vw;
+            }
+            .items{
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <div class="fade-in">
+            <img  id ="logo" src="logo2.png" style="width:70%; height:auto;" class="center">
+        </div>
+        <div class="fade2">
+            <p id="detail" class="center">
+                Created with &#9829 for the astro community
+            </p>
+        </div>
+        <br>
+        <div id="options" class = "fade3" align="center">
+            <table>
+                <tr>
+                    <th>
+                        <a href="astrotools.html"><button type="button" class="button" value="demo"><span>Astro Tools</span></button></a>
+                    </th>
+                    <th>
+                        <a href="compare2.html"><button type="button" class="button" value="demo"><span>Multitasker</span></button></a>
+                    </th>
+                    <th>
+                        <a href="about.html"><button type="button" class="button" value="demo"><span>About</span></button></a>
+                    </th>   
+                </tr>
+            </table>
+        </div>
+    </body>
+    <footer class="fade4" >
+        Designed by <a href="astrotools.html"><button type="button" class="button2" value="demo"><span>Sammarth Kumar</span></button></a>
+    </footer>
+</html>
